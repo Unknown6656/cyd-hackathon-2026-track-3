@@ -14,13 +14,17 @@ RESULTS = "redteam/results"
 _last = [0.0]
 
 
-def _post(path, body, timeout=90, min_gap=0.5):
+def _post(path, body, timeout=90, min_gap=0.5, model=None):
     wait = _last[0] + min_gap - time.time()
     if wait > 0:
         time.sleep(wait)
     data = json.dumps(body).encode()
+    url = BASE + path
+    if model:
+        from urllib.parse import quote
+        url += "?model=" + quote(model, safe="")
     req = urllib.request.Request(
-        BASE + path, data=data, headers={"Content-Type": "application/json"}, method="POST"
+        url, data=data, headers={"Content-Type": "application/json"}, method="POST"
     )
     try:
         with urllib.request.urlopen(req, timeout=timeout, context=CTX) as r:
@@ -38,26 +42,27 @@ def _post(path, body, timeout=90, min_gap=0.5):
         return -1, {"error": repr(e)}
 
 
-def advise(query, as_of, location=None, tag=None):
+def advise(query, as_of, location=None, tag=None, model=None):
     body = {"query": query, "as_of": as_of}
     if location is not None:
         body["location"] = {"text": location}
-    status, resp = _post("/advise", body)
-    return _record("advise", tag, body, status, resp)
+    status, resp = _post("/advise", body, model=model)
+    return _record("advise", tag, body, status, resp, model=model)
 
 
-def message(text, ts, tag=None):
+def message(text, ts, tag=None, model=None):
     body = {"text": text, "timestamp": ts}
-    status, resp = _post("/message", body)
-    return _record("message", tag, body, status, resp)
+    status, resp = _post("/message", body, model=model)
+    return _record("message", tag, body, status, resp, model=model)
 
 
-def _record(kind, tag, body, status, resp):
+def _record(kind, tag, body, status, resp, model=None):
     rec = {
         "ts": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
         "tag": tag,
         "kind": kind,
         "status": status,
+        "model": model,
         "request": body,
         "response": resp,
     }
