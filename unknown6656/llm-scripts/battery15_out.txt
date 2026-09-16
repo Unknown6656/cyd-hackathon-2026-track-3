@@ -1,0 +1,19 @@
+=== F20 REPRO (with location) ===
+[500] R1 0001-01-01 + Brovary           : Internal Server Error
+[500] R2 0001-01-01 + Kyiv              : Internal Server Error
+[200] R3 0001-06-01 + Brovary           : siren=False level=CLEAR cites=[]
+[200] R4 0001-01-02 + Brovary           : siren=False level=CLEAR cites=[]
+=== S-03481 -> S-03538 TRANSITION (Brovary) ===
+[200] T 2026-08-29T05:05                : siren=True level=ALERT cites=['S-03538']
+[200] T 2026-08-29T05:10                : siren=True level=ALERT cites=['S-03538']
+[200] T 2026-08-29T05:12                : siren=True level=ALERT cites=['S-03538']
+[200] T 2026-08-29T05:20                : siren=True level=ALERT cites=['S-03538']
+[200] T 2026-08-29T05:25                : siren=True level=ALERT cites=['S-03538']
+=== TRANSITION REFINEMENT ===
+  2026-08-29T05:01 -> siren=True cites=['S-03538']
+  2026-08-29T05:02 -> siren=True cites=['S-03538']
+  2026-08-29T05:03 -> siren=True cites=['S-03538']
+  2026-08-29T05:04 -> siren=True cites=['S-03538']
+  2026-08-29T05:27 -> siren=True cites=['S-03538']
+  2026-08-29T05:28 -> siren=True cites=['S-03538']
+  2026-08-29T05:29 -> siren=True cites=['S-03538']

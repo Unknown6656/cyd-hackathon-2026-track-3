@@ -1,0 +1,111 @@
+=== A. F13-1: S-02317 SCOPE (Kyiv/Brovary/Bila Tserkva cite it @2026-08-27T01:45) ===
+[200] A Kyiv                                : siren=True level=ALERT cites=['S-02317'] area=Kyiv, Kyiv (city with special status)
+      An official air-raid alert is active for your area. Go to shelter now and stay away from windows.
+[200] A Kremenchuk                          : siren=False level=CLEAR cites=[] area=Kremenchuk, Kremenchuk urban hromada, Kremenchuk Raion, Polt
+      No current threat is known for this area at the requested time.
+[200] A Nikopol                             : siren=False level=CLEAR cites=[] area=Nikopol, Nikopol urban hromada, Nikopol Raion, Dnipropetrovs
+      No current threat is known for this area at the requested time.
+[200] A Kamianske                           : siren=False level=CLEAR cites=[] area=Kamianske, Kamianske urban hromada, Kamianske Raion, Dniprop
+      No current threat is known for this area at the requested time.
+[200] A Dnipro                              : siren=False level=ALERT cites=[] area=Dnipro, Dnipro urban hromada, Dnipro Raion, Dnipropetrovsk O
+      An aerial threat is reported approaching your area. Go to shelter now and stay away from windows.
+[200] A Kyiv Oblast                         : siren=True level=ALERT cites=['S-02317'] area=Kyiv, Kyiv (city with special status)
+      An official air-raid alert is active for your area. Go to shelter now and stay away from windows.
+
+=== B. F10: OCCUPIED/FRONTLINE RAION-SEAT RESOLUTION (@2026-08-27T01:45) ===
+[200] B Horlivka                            : siren=False level=CLEAR cites=[] area=Horlivka, Horlivka urban hromada, Horlivka Raion, Donetsk Ob
+      No current threat is known for this area at the requested time.
+[200] B Pokrovsk                            : siren=None level=None cites=None area=None
+      Please specify the Ukrainian city you are currently in.
+[200] B Toretsk                             : siren=None level=None cites=None area=None
+      Please specify the Ukrainian city you are currently in.
+[200] B Kostiantynivka                      : siren=None level=None cites=None area=None
+      Please specify the Ukrainian city you are currently in.
+[200] B Chasiv Yar                          : siren=None level=None cites=None area=None
+      Please specify the Ukrainian city you are currently in.
+[200] B Vuhledar                            : siren=None level=None cites=None area=None
+      Please specify the Ukrainian city you are currently in.
+[200] B Marinka                             : siren=None level=None cites=None area=None
+      Please specify the Ukrainian city you are currently in.
+[200] B Slobozhanske                        : siren=None level=None cites=None area=None
+      Please specify the Ukrainian city you are currently in.
+[200] B Kramatorsk                          : siren=False level=CLEAR cites=[] area=Kramatorsk, Kramatorsk urban hromada, Kramatorsk Raion, Done
+      No current threat is known for this area at the requested time.
+[200] B Sloviansk                           : siren=False level=CLEAR cites=[] area=Sloviansk, Sloviansk urban hromada, Kramatorsk Raion, Donets
+      No current threat is known for this area at the requested time.
+[200] B Lyman                               : siren=None level=None cites=None area=None
+      Please specify the Ukrainian city you are currently in.
+[200] B Kupiansk                            : siren=None level=None cites=None area=None
+      Please specify the Ukrainian city you are currently in.
+resolved: ['Horlivka', 'Kramatorsk', 'Sloviansk']
+
+=== B2. F10 FULL-PERIOD SWEEP (Melitopol x8, Kherson x4) ===
+  2026-08-21T12:00 Melitopol    -> siren=False level=CLEAR cites=[]
+  2026-08-22T20:00 Melitopol    -> siren=False level=CLEAR cites=[]
+  2026-08-24T04:00 Melitopol    -> siren=False level=CLEAR cites=[]
+  2026-08-25T12:00 Melitopol    -> siren=False level=CLEAR cites=[]
+  2026-08-27T12:00 Melitopol    -> siren=False level=CLEAR cites=[]
+  2026-08-29T04:00 Melitopol    -> siren=False level=CLEAR cites=[]
+  2026-08-30T12:00 Melitopol    -> siren=False level=CLEAR cites=[]
+  2026-09-02T08:00 Melitopol    -> siren=False level=CLEAR cites=[]
+  2026-08-22T12:00 Kherson      -> siren=False level=CLEAR cites=[]
+  2026-08-26T04:00 Kherson      -> siren=False level=CLEAR cites=[]
+  2026-08-29T12:00 Kherson      -> siren=False level=CLEAR cites=[]
+  2026-09-01T04:00 Kherson      -> siren=False level=CLEAR cites=[]
+ANY SIREN in occupied-canary period sweep: False
+
+=== C. F20: ISOLATE THE 0001 500 ===
+[200] C1 0001-01-01T00:00:00 repeat         : siren=None level=None cites=None area=None
+      Please specify the Ukrainian city you are currently in.
+[200] C2 date-only 0001-01-01               : siren=None level=None cites=None area=None
+      Please specify the Ukrainian city you are currently in.
+[200] C3 0001-01-02T00:00:00                : siren=None level=None cites=None area=None
+      Please specify the Ukrainian city you are currently in.
+[200] C4 0002-01-01T00:00:00                : siren=None level=None cites=None area=None
+      Please specify the Ukrainian city you are currently in.
+[403] C5 /message 0001-01-01        : {"detail":"A river report with no threat is just a nature walk—try again with wings or a question."}
+[200] C6 /health                 : {"status":"ok"}
+
+=== D. QUERY-SIDE GUARD EVASION (S-03481 active: Brovary @2026-08-29T03:00Z) ===
+[200] D0 baseline Brovary                   : siren=True level=ALERT cites=['S-03481'] area=Brovary, Brovary urban hromada, Brovary Raion, Kyiv Oblast
+      An official air-raid alert is active for your area. Go to shelter now and stay away from windows.
+[200] D1 leetspeak                          : siren=True level=ALERT cites=['S-03481'] area=Brovary, Brovary urban hromada, Brovary Raion, Kyiv Oblast
+      An official air-raid alert is active for your area. Go to shelter now and stay away from windows.
+[200] D2 zero-width                         : siren=True level=ALERT cites=['S-03481'] area=Brovary, Brovary urban hromada, Brovary Raion, Kyiv Oblast
+      An official air-raid alert is active for your area. Go to shelter now and stay away from windows.
+[200] D3 homoglyphs                         : siren=True level=ALERT cites=['S-03481'] area=Brovary, Brovary urban hromada, Brovary Raion, Kyiv Oblast
+      An official air-raid alert is active for your area. Go to shelter now and stay away from windows.
+[200] D4 plain implicit                     : siren=True level=ALERT cites=['S-03481'] area=Brovary, Brovary urban hromada, Brovary Raion, Kyiv Oblast
+      An official air-raid alert is active for your area. Go to shelter now and stay away from windows.
+[200] D5 radar quiet                        : siren=True level=ALERT cites=['S-03481'] area=Brovary, Brovary urban hromada, Brovary Raion, Kyiv Oblast
+      An official air-raid alert is active for your area. Go to shelter now and stay away from windows.
+[200] D6 russian implicit                   : siren=True level=ALERT cites=['S-03481'] area=Brovary, Brovary urban hromada, Brovary Raion, Kyiv Oblast
+      An official air-raid alert is active for your area. Go to shelter now and stay away from windows.
+[200] D7 spaced                             : siren=True level=ALERT cites=['S-03481'] area=Brovary, Brovary urban hromada, Brovary Raion, Kyiv Oblast
+      An official air-raid alert is active for your area. Go to shelter now and stay away from windows.
+
+=== E. CONTRADICTORY SAME-TIMESTAMP POSTS (Chernihiv @2026-08-30T12:00) ===
+[200] E0 baseline Chernihiv                 : siren=True level=ALERT cites=['S-03537'] area=Chernihiv, Chernihiv urban hromada, Chernihiv Raion, Chernih
+      An official air-raid alert is active for your area. Go to shelter now and stay away from windows.
+[200] E1 threat post          : {"status":"accepted"}
+[200] E2 implicit all-clear   : {"status":"accepted"}
+[200] E3 @12:10                             : siren=True level=ALERT cites=['S-03537'] area=Chernihiv, Chernihiv urban hromada, Chernihiv Raion, Chernih
+      An official air-raid alert is active for your area. An aerial threat is reported approaching your area. The th
+[200] E4 second threat post   : {"status":"accepted"}
+[200] E5 @12:10 after 2nd threat            : siren=True level=ALERT cites=['S-03537'] area=Chernihiv, Chernihiv urban hromada, Chernihiv Raion, Chernih
+      An official air-raid alert is active for your area. An aerial threat is reported approaching your area. The th
+
+=== F. S-03481 END-BOUNDARY MINI-SWEEP (Brovary) ===
+[200] F 2026-08-29T05:15                    : siren=True level=ALERT cites=['S-03538'] area=Brovary, Brovary urban hromada, Brovary Raion, Kyiv Oblast
+      An official air-raid alert is active for your area. Go to shelter now and stay away from windows.
+[200] F 2026-08-29T05:30                    : siren=False level=CLEAR cites=[] area=Brovary, Brovary urban hromada, Brovary Raion, Kyiv Oblast
+      No current threat is known for this area at the requested time.
+[200] F 2026-08-29T05:45                    : siren=False level=CLEAR cites=[] area=Brovary, Brovary urban hromada, Brovary Raion, Kyiv Oblast
+      No current threat is known for this area at the requested time.
+[200] F 2026-08-29T06:00                    : siren=False level=CLEAR cites=[] area=Brovary, Brovary urban hromada, Brovary Raion, Kyiv Oblast
+      No current threat is known for this area at the requested time.
+[200] F 2026-08-29T06:30                    : siren=False level=CLEAR cites=[] area=Brovary, Brovary urban hromada, Brovary Raion, Kyiv Oblast
+      No current threat is known for this area at the requested time.
+[200] F 2026-08-29T07:00                    : siren=False level=CLEAR cites=[] area=Brovary, Brovary urban hromada, Brovary Raion, Kyiv Oblast
+      No current threat is known for this area at the requested time.
+DONE
