@@ -1,0 +1,53 @@
+=== A. ZONE DISAMBIGUATION (S-02317: active 23:00Z 08-26 .. 01:15Z 08-27) ===
+[200] A1 naive 04:45                    : siren=False level=ALERT cites=[] as_of=2026-08-27T04:45:00
+[200] A2 04:45Z (=A1 if UTC)            : siren=False level=ALERT cites=[] as_of=2026-08-27T04:45:00
+[200] A3 01:45Z (=A1 if EET)            : siren=True level=ALERT cites=['S-02317'] as_of=2026-08-27T01:45:00
+[200] A4 04:45+03:00 (=A3)              : siren=True level=ALERT cites=['S-02317'] as_of=2026-08-27T01:45:00
+[200] A5 naive 02:30                    : siren=True level=ALERT cites=['S-02317'] as_of=2026-08-27T02:30:00
+[200] A6 02:30Z (=A5 if UTC)            : siren=True level=ALERT cites=['S-02317'] as_of=2026-08-27T02:30:00
+[200] A7 23:30Z 08-26 (=A5 if EET)      : siren=True level=ALERT cites=['S-02268'] as_of=2026-08-26T23:30:00
+[200] A8 02:30+03:00 (=A7)              : siren=True level=ALERT cites=['S-02268'] as_of=2026-08-26T23:30:00
+[200] A9 05:30+03:00 (=A6)              : siren=True level=ALERT cites=['S-02317'] as_of=2026-08-27T02:30:00
+[200] A10 22:30-05:00 (=A6)             : siren=True level=ALERT cites=['S-02930'] as_of=2026-08-28T03:30:00
+[200] A11 naive 01:00 (in win EET, out UTC): siren=False level=ALERT cites=[] as_of=2026-08-27T01:00:00
+[200] A12 01:00Z                        : siren=False level=ALERT cites=[] as_of=2026-08-27T01:00:00
+[200] A13 04:00+03:00 (=A12)            : siren=False level=ALERT cites=[] as_of=2026-08-27T01:00:00
+
+=== B. as_of FORMAT FUZZ (Brovary) ===
+[200] B1 lowercase t                    : siren=False level=ALERT cites=[] as_of=2026-08-27T04:45:00
+[422] B2 no zero pad                    : {"detail":[{"type":"datetime_from_date_parsing","loc":["body","as_of"],"msg":"Input should be a valid datetime or date, invalid character in month","input":"2026-8-7T4:45","ctx":{"error":"invalid character in month"}}]}
+[200] B3 fractional                     : siren=False level=ALERT cites=[] as_of=2026-08-27T04:45:00.123456
+[200] B4 comma decimal                  : siren=False level=ALERT cites=[] as_of=2026-08-27T04:45:00.500000
+[422] B5 hour 25                        : {"detail":[{"type":"datetime_from_date_parsing","loc":["body","as_of"],"msg":"Input should be a valid datetime or date, unexpected extra characters at the end of the input","input":"2026-08-27T25:00","ctx":{"error":"unex
+[422] B6 minute 60                      : {"detail":[{"type":"datetime_from_date_parsing","loc":["body","as_of"],"msg":"Input should be a valid datetime or date, unexpected extra characters at the end of the input","input":"2026-08-27T04:60","ctx":{"error":"unex
+[422] B7 leap second                    : {"detail":[{"type":"datetime_from_date_parsing","loc":["body","as_of"],"msg":"Input should be a valid datetime or date, unexpected extra characters at the end of the input","input":"2026-08-27T23:59:60","ctx":{"error":"u
+[422] B8 non-leap 02-29                 : {"detail":[{"type":"datetime_from_date_parsing","loc":["body","as_of"],"msg":"Input should be a valid datetime or date, day value is outside expected range","input":"2026-02-29T12:00","ctx":{"error":"day value is outside
+[200] B9 year 9999                      : siren=False level=CLEAR cites=[] as_of=9999-12-31T23:59:59
+[500] B10 year 0001                     : Internal Server Error
+[422] B11 unicode digits                : {"detail":[{"type":"datetime_from_date_parsing","loc":["body","as_of"],"msg":"Input should be a valid datetime or date, invalid character in year","input":"２０２６-08-27T04:45","ctx":{"error":"invalid character in year"}}]}
+[200] B12 epoch int                     : siren=False level=CLEAR cites=[] as_of=2026-08-26T11:25:00
+[422] B13 offset no minutes             : {"detail":[{"type":"datetime_from_date_parsing","loc":["body","as_of"],"msg":"Input should be a valid datetime or date, unexpected extra characters at the end of the input","input":"2026-08-27T04:45+03","ctx":{"error":"u
+[422] B14 offset seconds                : {"detail":[{"type":"datetime_from_date_parsing","loc":["body","as_of"],"msg":"Input should be a valid datetime or date, unexpected extra characters at the end of the input","input":"2026-08-27T04:45:00+03:00:30","ctx":{"
+[422] B15 trailing junk                 : {"detail":[{"type":"datetime_from_date_parsing","loc":["body","as_of"],"msg":"Input should be a valid datetime or date, unexpected extra characters at the end of the input","input":"2026-08-27T04:45:00Z x","ctx":{"error"
+[422] B16 natural lang                  : {"detail":[{"type":"datetime_from_date_parsing","loc":["body","as_of"],"msg":"Input should be a valid datetime or date, input is too short","input":"now","ctx":{"error":"input is too short"}}]}
+
+=== C. /message TIMESTAMP FORMAT FUZZ ===
+[200] C1 space             ('2026-08-27 04:45'): {"status":"accepted"}
+[200] C2 fractional        ('2026-08-27T04:45:30.5'): {"status":"accepted"}
+[422] C3 leap second       ('2026-08-27T23:59:60'): {"detail":[{"type":"datetime_from_date_parsing","loc":["body","timestamp"],"msg":"Input should be a valid datetime or date, unexpected extra characters at the end of the input","in
+[422] C4 unicode           ('２０２６-08-27T04:45'): {"detail":[{"type":"datetime_from_date_parsing","loc":["body","timestamp"],"msg":"Input should be a valid datetime or date, invalid character in year","input":"２０２６-08-27T04:45","c
+[200] C5 epoch int         ('1787743500'): {"status":"accepted"}
+[200] C6 pre-epoch         ('1969-12-31T23:59'): {"status":"accepted"}
+[422] C7 year 0000         ('0000-01-01T00:00'): {"detail":[{"type":"datetime_parsing","loc":["body","timestamp"],"msg":"Input should be a valid datetime, year 0 is out of range","input":"0000-01-01T00:00","ctx":{"error":"year 0 
+[422] C8 month 13          ('2026-13-01T00:00'): {"detail":[{"type":"datetime_from_date_parsing","loc":["body","timestamp"],"msg":"Input should be a valid datetime or date, month value is outside expected range of 1-12","input":"
+
+=== D. S-03481 END-BOUNDARY HUNT (Brovary; active @2026-08-29T05:00, next window 2026-09-02T16:00) ===
+  2026-08-29T08:00 -> siren=False
+  2026-08-29T12:00 -> siren=False
+  2026-08-29T18:00 -> siren=False
+  2026-08-30T00:00 -> siren=False
+  2026-08-30T12:00 -> siren=False
+  2026-08-31T00:00 -> siren=False
+  2026-09-01T00:00 -> siren=False
+  2026-09-01T12:00 -> siren=False
+  2026-09-02T00:00 -> siren=False
