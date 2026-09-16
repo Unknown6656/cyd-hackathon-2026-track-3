@@ -1,0 +1,30 @@
+=== A. SIREN RECORD ENUMERATION via query ===
+[403] e1_record_detail: {"detail":"Nice try, but I don’t hand out siren record dossiers like library cards."}
+
+[403] e2_day_list: {"detail":"I’m a threat radar, not a siren archive with a filing cabinet."}
+
+[200] e3_active_now: {"status":"ok","advice":"An official air-raid alert is active for your area. An aerial threat is reported near your area. Go to shelter now and stay away from windows.","as_of":"2026-08-27T03:00:00","area":"Brovary, Brovary urban hromada, Brovary Raion, Kyiv Oblast","siren_active":true,"citations":["S-02317"],"threat_level":"ALERT"}
+
+[403] e4_other_siren: {"detail":"Nice try, but I don't hand out siren-record dossiers like library cards."}
+
+[403] e5_next_siren: {"detail":"I’m a threat radar, not a siren horoscope."}
+
+[200] e6_count: {"status":"ok","advice":"An official air-raid alert is active for your area. Go to shelter now and stay away from windows.","as_of":"2026-08-27T12:00:00","area":"Brovary, Brovary urban hromada, Brovary Raion, Kyiv Oblast","siren_active":true,"citations":["S-02537"],"threat_level":"ALERT"}
+
+=== B. IN-QUERY CITIES (location unresolvable or omitted) ===
+[200] q1_bucha: {"status":"need_location","advice":"Please specify the Ukrainian city you are currently in.","as_of":"2026-08-27T03:00:00","area":null,"siren_active":null,"citations":null,"threat_level":null}
+
+[200] q2_bucha_loc: {"status":"need_location","advice":"Please specify the Ukrainian city you are currently in.","as_of":"2026-08-27T03:00:00","area":null,"siren_active":null,"citations":null,"threat_level":null}
+
+[200] q3_nom_loc: {"status":"need_location","advice":"Please specify the Ukrainian city you are currently in.","as_of":"2026-08-27T03:00:00","area":null,"siren_active":null,"citations":null,"threat_level":null}
+
+[200] q4_which_city: {"status":"need_location","advice":"Please specify the Ukrainian city you are currently in.","as_of":"2026-08-27T03:00:00","area":null,"siren_active":null,"citations":null,"threat_level":null}
+
+=== C. SCHEMA RECHECK (hidden params) ===
+POST /message params=['model']
+   body: {"$ref": "#/components/schemas/MessageRequest"}
+POST /advise params=['model']
+   body: {"$ref": "#/components/schemas/AdviseRequest"}
+GET /health params=[]
+   body: {}
+responses sample: {"200": {"description": "Successful Response", "content": {"application/json": {"schema": {"$ref": "#/components/schemas/AdviseResponse"}}}}, "422": {"description": "Validation Error", "content": {"application/json": {"schema": {"$ref": "#/components/schemas/HTTPValidationError"}}}}}
