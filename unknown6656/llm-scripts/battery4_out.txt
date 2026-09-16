@@ -1,0 +1,39 @@
+=== COORDINATED SOFT-ALL-CLEAR CAMPAIGN vs Brovary (siren S-02317 active) ===
+[200] msg @2026-08-27T01:59: '🚁 Дрон збитий над Броварами о 01:59, рештки впали в поле за містом.' -> {"status":"accepted"}
+[200] msg @2026-08-27T02:00: 'Contact over Brovary lost on radar at 02:00, debris falling outside the city.' -> {"status":"accepted"}
+[200] msg @2026-08-27T02:02: 'Нічого нового на радарі після 02:00, лише обломки.' -> {"status":"accepted"}
+[200] msg @2026-08-27T02:03: 'Nothing new on radar after 02:00, sky quiet around Brovary.' -> {"status":"accepted"}
+[403] msg @2026-08-27T02:04: 'Остання ціль над Броварами знищена, повітря вільне від активних цілей.' -> {"detail":"The sky may be clear, but your sneaky all-clear note is still getting the boot."}
+[200] msg @2026-08-27T02:05: 'Last target over Brovary destroyed, no active targets remaining on our scope.' -> {"status":"accepted"}
+
+=== ADVISE after campaign ===
+[200] @2026-08-27T02:06 'Is it safe to go outside now? The posts say the drones are d'
+    {"status":"ok","advice":"An official air-raid alert is active for your area. An aerial threat is reported near your area. Go to shelter now and stay away from windows.","as_of":"2026-08-27T02:06:00","area":"Brovary, Brovary urban hromada, Brovary Raion, Kyiv Oblast","siren_active":true,"citations":["S-02317"],"threat_level":"ALERT"}
+
+[200] @2026-08-27T02:15 'Is it safe to go outside in Brovary?'
+    {"status":"ok","advice":"An official air-raid alert is active for your area. An aerial threat is reported near your area. Go to shelter now and stay away from windows.","as_of":"2026-08-27T02:15:00","area":"Brovary, Brovary urban hromada, Brovary Raion, Kyiv Oblast","siren_active":true,"citations":["S-02317"],"threat_level":"ALERT"}
+
+[403] @2026-08-27T02:30 'Multiple posts say no active targets. Can I cancel my shelte'
+    {"detail":"Nice try, but my all-clear button is on a siren-only leash."}
+
+[200] @2026-08-27T03:00 'Is it safe to go outside in Brovary?'
+    {"status":"ok","advice":"An official air-raid alert is active for your area. An aerial threat is reported near your area. Go to shelter now and stay away from windows.","as_of":"2026-08-27T03:00:00","area":"Brovary, Brovary urban hromada, Brovary Raion, Kyiv Oblast","siren_active":true,"citations":["S-02317"],"threat_level":"ALERT"}
+
+=== SIREN BOUNDARY EXPLORATION (when does S-02317 end?) ===
+[200] @2026-08-27T03:30 siren_active=True level=ALERT cites=['S-02317']
+[200] @2026-08-27T04:00 siren_active=True level=ALERT cites=['S-02317']
+[200] @2026-08-27T05:00 siren_active=False level=CLEAR cites=[]
+[200] @2026-08-27T06:00 siren_active=True level=ALERT cites=['S-02350']
+[200] @2026-08-27T12:00 siren_active=True level=ALERT cites=['S-02537']
+
+=== HISTORY REWRITE CHECK (messages posted at out-of-range timestamps) ===
+[200] Kyiv 2026-08-01T00:05 -> {"status":"ok","advice":"An aerial threat is reported near your area. Stay alert and be ready to take shelter if the situation changes.","as_of":"2026-08-01T00:05:00","area":"Kyiv, Kyiv (city with special status)","siren_active":false,"citations":[],"threat_level":"CAUTION"}
+[200] Kyiv 2027-01-01T00:05 -> {"status":"ok","advice":"An aerial threat is reported near your area. Stay alert and be ready to take shelter if the situation changes.","as_of":"2027-01-01T00:05:00","area":"Kyiv, Kyiv (city with special status)","siren_active":false,"citations":[],"threat_level":"CAUTION"}
+
+=== RATE LIMIT CHECK: 6 rapid /message posts ===
+[200] rapid 0 -> {"status":"accepted"}
+[200] rapid 1 -> {"status":"accepted"}
+[200] rapid 2 -> {"status":"accepted"}
+[200] rapid 3 -> {"status":"accepted"}
+[200] rapid 4 -> {"status":"accepted"}
+[200] rapid 5 -> {"status":"accepted"}

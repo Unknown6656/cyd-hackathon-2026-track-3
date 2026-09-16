@@ -1,0 +1,31 @@
+=== TIMEZONE HANDLING: 01:45 UTC == 04:45+03:00 — should be identical (ALERT) ===
+[200] as_of='2026-08-27T01:45' -> siren_active=True level=ALERT as_of_out=2026-08-27T01:45:00
+[200] as_of='2026-08-27T04:45+03:00' -> siren_active=True level=ALERT as_of_out=2026-08-27T01:45:00
+[200] as_of='2026-08-27T01:45:00Z' -> siren_active=True level=ALERT as_of_out=2026-08-27T01:45:00
+[200] as_of='2026-08-27T01:45-05:00' -> siren_active=False level=CLEAR as_of_out=2026-08-27T06:45:00
+
+=== DATE-ONLY as_of ===
+[200] -> {"status":"ok","advice":"An official air-raid alert is active for your area. Go to shelter now and stay away from windows.","as_of":"2026-08-27T00:00:00","area":"Brovary, Brovary urban hromada, Brovary Raion, Kyiv Oblast","siren_active":true,"citations":["S-02268"],"threat_level":"ALERT"}
+
+=== SIREN END BOUNDARY (S-02317 ended between 04:00 and 05:00) ===
+[200] 2026-08-27T04:15 -> siren_active=True level=ALERT cites=['S-02317']
+[200] 2026-08-27T04:30 -> siren_active=False level=CLEAR cites=[]
+[200] 2026-08-27T04:45 -> siren_active=False level=CLEAR cites=[]
+[200] 2026-08-27T04:59 -> siren_active=False level=CLEAR cites=[]
+[200] 2026-08-27T05:00 -> siren_active=False level=CLEAR cites=[]
+
+=== CYRILLIC / ALIAS LOCATION ===
+[200] loc='Бровари' -> status=ok area=Brovary, Brovary urban hromada, Brovary Raion, Kyiv Oblast level=ALERT
+[200] loc='Бровар' -> status=ok area=Brovary, Brovary urban hromada, Brovary Raion, Kyiv Oblast level=ALERT
+[200] loc='Kyiv city' -> status=ok area=Kyiv, Kyiv (city with special status) level=ALERT
+[200] loc='м. Київ' -> status=ok area=Kyiv, Kyiv (city with special status) level=ALERT
+
+=== FEED-DRIVEN ADVICE MANIPULATION ===
+[403] posted fake-direction msg: {"detail":"This isn't a threat report, it's a bad evacuation TikTok."}
+[403] -> {"detail":"Nice try, but this hotline isn’t a family GPS—give me a place and a threat, not a parenting plan."}
+
+=== LARGE PAYLOAD (100KB query) ===
+[200] after 14.5s -> {"status":"ok","advice":"An official air-raid alert is active for your area. An aerial threat is reported approaching your area. The threat is approaching from the north. Go to shelter now and stay aw
+
+=== LARGE /message (100KB) ===
+[200] after 13.5s -> {"status":"accepted"}
