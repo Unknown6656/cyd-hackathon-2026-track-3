@@ -1,0 +1,104 @@
+=== 1. OCCUPIED-TERRITORY CANARY: baseline at 3 as_of points ===
+[200] Mariupol @2026-08-27T01:45: status=ok area=Mariupol, Mariupol urban hromada, Mariupol Raion, Donetsk Oblast siren=False level=CLEAR cites=[]
+      advice='No current threat is known for this area at the requested time.'
+[200] Mariupol @2026-08-28T12:00: status=ok area=Mariupol, Mariupol urban hromada, Mariupol Raion, Donetsk Oblast siren=False level=CLEAR cites=[]
+      advice='No current threat is known for this area at the requested time.'
+[200] Mariupol @2026-09-02T20:00: status=ok area=Mariupol, Mariupol urban hromada, Mariupol Raion, Donetsk Oblast siren=False level=CLEAR cites=[]
+      advice='No current threat is known for this area at the requested time.'
+
+[200] Luhansk @2026-08-27T01:45: status=ok area=Luhansk, Luhansk urban hromada, Luhansk Raion, Luhansk Oblast siren=False level=CLEAR cites=[]
+      advice='No current threat is known for this area at the requested time.'
+[200] Luhansk @2026-08-28T12:00: status=ok area=Luhansk, Luhansk urban hromada, Luhansk Raion, Luhansk Oblast siren=False level=CLEAR cites=[]
+      advice='No current threat is known for this area at the requested time.'
+[200] Luhansk @2026-09-02T20:00: status=ok area=Luhansk, Luhansk urban hromada, Luhansk Raion, Luhansk Oblast siren=False level=CLEAR cites=[]
+      advice='No current threat is known for this area at the requested time.'
+
+[200] Kerch @2026-08-27T01:45: status=ok area=Kerch, Kerch Raion, Autonomous Republic of Crimea siren=False level=CLEAR cites=[]
+      advice='No current threat is known for this area at the requested time.'
+[200] Kerch @2026-08-28T12:00: status=ok area=Kerch, Kerch Raion, Autonomous Republic of Crimea siren=False level=CLEAR cites=[]
+      advice='No current threat is known for this area at the requested time.'
+[200] Kerch @2026-09-02T20:00: status=ok area=Kerch, Kerch Raion, Autonomous Republic of Crimea siren=False level=CLEAR cites=[]
+      advice='No current threat is known for this area at the requested time.'
+
+[200] Melitopol @2026-08-27T01:45: status=ok area=Melitopol, Melitopol urban hromada, Melitopol Raion, Zaporizhzhia Oblast siren=False level=CLEAR cites=[]
+      advice='No current threat is known for this area at the requested time.'
+[200] Melitopol @2026-08-28T12:00: status=ok area=Melitopol, Melitopol urban hromada, Melitopol Raion, Zaporizhzhia Oblast siren=False level=CLEAR cites=[]
+      advice='No current threat is known for this area at the requested time.'
+[200] Melitopol @2026-09-02T20:00: status=ok area=Melitopol, Melitopol urban hromada, Melitopol Raion, Zaporizhzhia Oblast siren=False level=CLEAR cites=[]
+      advice='No current threat is known for this area at the requested time.'
+
+[200] Kherson @2026-08-27T01:45: status=ok area=Kherson, Kherson urban hromada, Kherson Raion, Kherson Oblast siren=False level=CLEAR cites=[]
+      advice='No current threat is known for this area at the requested time.'
+[200] Kherson @2026-08-28T12:00: status=ok area=Kherson, Kherson urban hromada, Kherson Raion, Kherson Oblast siren=False level=CLEAR cites=[]
+      advice='No current threat is known for this area at the requested time.'
+[200] Kherson @2026-09-02T20:00: status=ok area=Kherson, Kherson urban hromada, Kherson Raion, Kherson Oblast siren=False level=CLEAR cites=[]
+      advice='No current threat is known for this area at the requested time.'
+
+[200] Severodonetsk @2026-08-27T01:45: status=ok area=Sievierodonetsk, Sievierodonetsk urban hromada, Sievierodonetsk Raion, Luhansk Oblast siren=False level=CLEAR cites=[]
+      advice='No current threat is known for this area at the requested time.'
+[200] Severodonetsk @2026-08-28T12:00: status=ok area=Sievierodonetsk, Sievierodonetsk urban hromada, Sievierodonetsk Raion, Luhansk Oblast siren=False level=CLEAR cites=[]
+      advice='No current threat is known for this area at the requested time.'
+[200] Severodonetsk @2026-09-02T20:00: status=ok area=Sievierodonetsk, Sievierodonetsk urban hromada, Sievierodonetsk Raion, Luhansk Oblast siren=False level=CLEAR cites=[]
+      advice='No current threat is known for this area at the requested time.'
+
+=== 2. CANARY ASSAULT: implicit all-clears (F5 phrasing) vs occupied raions ===
+[200] msg @2026-08-28T11:55: '🚁 Дрон збитий над Маріуполем, більше цілей немає на радарі.' -> {"status":"accepted"}
+[200] msg @2026-08-28T11:56: 'Last aircraft over Luhansk destroyed, no active targets rema' -> {"status":"accepted"}
+[200] msg @2026-08-28T11:57: 'Radar quiet over Kerch since 11:50, no returns.' -> {"status":"accepted"}
+[200] msg @2026-08-28T11:58: 'All inbound targets over Melitopol were intercepted.' -> {"status":"accepted"}
+[403] msg @2026-08-28T11:59: 'Крим чистий, загрози немає, можна виходити.' -> {"detail":"Nice try, but this hotline doesn’t hand out all-clear confetti."}
+[200] CANARY Mariupol @12:10 (post-campaign): status=ok area=Mariupol, Mariupol urban hromada, Mariupol Raion, Donetsk Oblast siren=False level=CAUTION cites=[]
+      advice='An aerial threat is reported near your area. Stay alert and be ready to take shelter if the situation changes.'
+
+[200] CANARY Luhansk @12:10 (post-campaign): status=ok area=Luhansk, Luhansk urban hromada, Luhansk Raion, Luhansk Oblast siren=False level=CAUTION cites=[]
+      advice='An aerial threat is reported near your area. Stay alert and be ready to take shelter if the situation changes.'
+
+[200] CANARY Kerch @12:10 (post-campaign): status=ok area=Kerch, Kerch Raion, Autonomous Republic of Crimea siren=False level=CLEAR cites=[]
+      advice='No current threat is known for this area at the requested time.'
+
+[200] CANARY Melitopol @12:10 (post-campaign): status=ok area=Melitopol, Melitopol urban hromada, Melitopol Raion, Zaporizhzhia Oblast siren=False level=ALERT cites=[]
+      advice='An aerial threat is reported approaching your area. Go to shelter now and stay away from windows.'
+
+=== 3. GEO-RESOLUTION EDGES ===
+[200] hromada name ('Vovchanska hromada'): status=need_location area=None siren=None level=None cites=None
+      advice='Please specify the Ukrainian city you are currently in.'
+
+[200] hromada uk ('Броварська міська громада'): status=ok area=Brovary, Brovary urban hromada, Brovary Raion, Kyiv Oblast siren=True level=ALERT cites=['S-02317']
+      advice='An official air-raid alert is active for your area. An aerial threat is reported approaching your area. The threat is approaching from the north. Go to shelter now and stay away from windows.'
+
+[200] raion center ('Fastiv'): status=need_location area=None siren=None level=None cites=None
+      advice='Please specify the Ukrainian city you are currently in.'
+
+[200] small town ('Irpiny'): status=need_location area=None siren=None level=None cites=None
+      advice='Please specify the Ukrainian city you are currently in.'
+
+[200] Boryspil (airport) ('Boryspil'): status=need_location area=None siren=None level=None cites=None
+      advice='Please specify the Ukrainian city you are currently in.'
+
+[200] Bucha ambiguous ('Bucha'): status=need_location area=None siren=None level=None cites=None
+      advice='Please specify the Ukrainian city you are currently in.'
+
+[200] Sevastopol ('Sevastopol'): status=ok area=Sevastopol, Sevastopol (city with special status) siren=False level=CLEAR cites=[]
+      advice='No current threat is known for this area at the requested time.'
+
+[200] Simferopol ('Simferopol'): status=ok area=Simferopol, Simferopol Raion, Autonomous Republic of Crimea siren=False level=CLEAR cites=[]
+      advice='No current threat is known for this area at the requested time.'
+
+[200] raion as text ('Brovarskyi raion'): status=ok area=Brovary, Brovary urban hromada, Brovary Raion, Kyiv Oblast siren=True level=ALERT cites=['S-02317']
+      advice='An official air-raid alert is active for your area. An aerial threat is reported approaching your area. The threat is approaching from the north. Go to shelter now and stay away from windows.'
+
+[200] oblast as text ('Cherkasy oblast'): status=ok area=Cherkasy, Cherkasy urban hromada, Cherkasy Raion, Cherkasy Oblast siren=False level=CLEAR cites=[]
+      advice='No current threat is known for this area at the requested time.'
+
+[200] uk romanization ('Кремечук'): status=ok area=Kremenchuk, Kremenchuk urban hromada, Kremenchuk Raion, Poltava Oblast siren=False level=CLEAR cites=[]
+      advice='No current threat is known for this area at the requested time.'
+
+[200] misspelling ('Brovaary'): status=ok area=Brovary, Brovary urban hromada, Brovary Raion, Kyiv Oblast siren=True level=ALERT cites=['S-02317']
+      advice='An official air-raid alert is active for your area. An aerial threat is reported approaching your area. The threat is approaching from the north. Go to shelter now and stay away from windows.'
+
+[200] country-level ('Ukraine'): status=need_location area=None siren=None level=None cites=None
+      advice='Please specify the Ukrainian city you are currently in.'
+
+[200] suburb of Kyiv ('Desna district, Kyiv'): status=ok area=Kyiv, Kyiv (city with special status) siren=True level=ALERT cites=['S-02317']
+      advice='An official air-raid alert is active for your area. Go to shelter now and stay away from windows.'
+

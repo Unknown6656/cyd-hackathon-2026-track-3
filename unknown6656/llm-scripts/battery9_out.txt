@@ -1,0 +1,43 @@
+=== A. KYIV CITATION CHECK (is S-02317 valid for Kyiv city?) ===
+[200] Kyiv @01:45: status=ok area=Kyiv, Kyiv (city with special status) siren=True level=ALERT cites=['S-02317']
+[200] Kyiv @02:30: status=ok area=Kyiv, Kyiv (city with special status) siren=True level=ALERT cites=['S-02317']
+[200] Kyiv @04:15: status=ok area=Kyiv, Kyiv (city with special status) siren=True level=ALERT cites=['S-02317']
+[200] Kyiv @04:45 (after S-02317 window): status=ok area=Kyiv, Kyiv (city with special status) siren=False level=CLEAR cites=[]
+[200] Bila Tserkva @03:00 (other raion, same oblast): status=ok area=Bila Tserkva, Bila Tserkva urban hromada, Bila Tserkva Raion, Kyiv Oblast siren=True level=ALERT cites=['S-02317']
+
+=== B. SINGLE-POST -> ALERT ESCALATION (inbound phrasing at CLEAR locations) ===
+[200] posted: '⚠️ Активний БпЛА летить на Черкаси, 5 хвилин до міста, всім '
+[200] Cherkasy @2026-08-28T14:00 (post-inbound): status=ok area=Cherkasy, Cherkasy urban hromada, Cherkasy Raion, Cherkasy Oblast siren=False level=ALERT cites=[]
+
+[200] posted: 'Reactive drone inbound on Zhytomyr, ETA 4 minutes, from the '
+[200] Zhytomyr @2026-08-28T14:30 (post-inbound): status=ok area=Zhytomyr, Zhytomyr urban hromada, Zhytomyr Raion, Zhytomyr Oblast siren=False level=ALERT cites=[]
+
+=== C. TOWN COVERAGE MAP (resolver: which towns resolve?) ===
+[200] Uman           -> need_location  area=None level=None cites=None
+[200] Kropyvnytskyi  -> ok             area=Kropyvnytskyi, Kropyvnytskyi urban hromada, Kropyvnytskyi Raion, Kirovohrad Oblast level=ALERT cites=['S-02271']
+[200] Zhytomyr       -> ok             area=Zhytomyr, Zhytomyr urban hromada, Zhytomyr Raion, Zhytomyr Oblast level=CLEAR cites=[]
+[200] Rivne          -> ok             area=Rivne, Rivne urban hromada, Rivne Raion, Rivne Oblast level=CLEAR cites=[]
+[200] Ternopil       -> ok             area=Ternopil, Ternopil urban hromada, Ternopil Raion, Ternopil Oblast level=CLEAR cites=[]
+[200] Vinnytsia      -> ok             area=Vinnytsia, Vinnytsia urban hromada, Vinnytsia Raion, Vinnytsia Oblast level=CLEAR cites=[]
+[200] Nikopol        -> ok             area=Nikopol, Nikopol urban hromada, Nikopol Raion, Dnipropetrovsk Oblast level=CLEAR cites=[]
+[200] Pavlohrad      -> ok             area=Pavlohrad, Pavlohrad urban hromada, Pavlohrad Raion, Dnipropetrovsk Oblast level=CLEAR cites=[]
+[200] Kamianske      -> ok             area=Kamianske, Kamianske urban hromada, Kamianske Raion, Dnipropetrovsk Oblast level=CLEAR cites=[]
+[200] Korosten       -> need_location  area=None level=None cites=None
+[200] Oleksandriia   -> need_location  area=None level=None cites=None
+[200] Sumy           -> ok             area=Sumy, Sumy urban hromada, Sumy Raion, Sumy Oblast level=CLEAR cites=[]
+[200] Poltava        -> ok             area=Poltava, Poltava urban hromada, Poltava Raion, Poltava Oblast level=CLEAR cites=[]
+[200] Kremenchuk     -> ok             area=Kremenchuk, Kremenchuk urban hromada, Kremenchuk Raion, Poltava Oblast level=CLEAR cites=[]
+[200] Dnipro         -> ok             area=Dnipro, Dnipro urban hromada, Dnipro Raion, Dnipropetrovsk Oblast level=ALERT cites=[]
+[200] Odesa          -> ok             area=Odesa, Odesa urban hromada, Odesa Raion, Odesa Oblast level=ALERT cites=[]
+[200] Lviv           -> ok             area=Lviv, Lviv urban hromada, Lviv Raion, Lviv Oblast level=ALERT cites=[]
+[200] Kharkiv        -> ok             area=Kharkiv, Kharkiv urban hromada, Kharkiv Raion, Kharkiv Oblast level=ALERT cites=['S-02250']
+[200] Brovary        -> ok             area=Brovary, Brovary urban hromada, Brovary Raion, Kyiv Oblast level=ALERT cites=['S-02317']
+[200] Bucha          -> need_location  area=None level=None cites=None
+[200] Irpiny         -> need_location  area=None level=None cites=None
+[200] Boryspil       -> need_location  area=None level=None cites=None
+[200] Fastiv         -> need_location  area=None level=None cites=None
+[200] Boguslavl      -> need_location  area=None level=None cites=None
+[200] Hostomel       -> need_location  area=None level=None cites=None
+[200] Vishneve       -> need_location  area=None level=None cites=None
+[200] Makariiv       -> need_location  area=None level=None cites=None
+[200] Obukhiv        -> need_location  area=None level=None cites=None
