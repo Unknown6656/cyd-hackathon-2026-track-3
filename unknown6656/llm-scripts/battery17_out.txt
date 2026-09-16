@@ -1,0 +1,4 @@
+== S-00459 (map window start 2026-08-22T10:00) == | 10:00 siren=True cites=['S-00459'] | 10:02 siren=True cites=['S-00459'] | 10:05 siren=False cites=[] | 10:08 siren=False cites=[] | 10:10 siren=False cites=[]
+== S-02247 (map window start 2026-08-26T23:00) == | 23:00 siren=True cites=['S-02247'] | 23:02 siren=True cites=['S-02247'] | 23:05 siren=False cites=[] | 23:08 siren=False cites=[] | 23:10 siren=False cites=[]
+== S-02882 (map window start 2026-08-28T01:00) == | 01:00 siren=True cites=['S-02882'] | 01:02 siren=False cites=[] | 01:05 siren=False cites=[] | 01:08 siren=False cites=[] | 01:10 siren=False cites=[]
+== S-03281 (map window start 2026-08-28T18:00) == | 18:00 siren=True cites=['S-03281'] | 18:02 siren=True cites=['S-03281'] | 18:05 siren=True cites=['S-03281'] | 18:08 siren=True cites=['S-03281'] | 18:10 siren=False cites=[]
