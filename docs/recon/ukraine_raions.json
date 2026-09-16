@@ -620,7 +620,12 @@
       {
         "raion": "Zviahel Raion",
         "center": "Zviahel"
-      },
+      }
+    ]
+  },
+  {
+    "oblast": "Autonomous Republic of Crimea",
+    "raions": [
       {
         "raion": "Bakhchysarai Raion",
         "center": "Bakhchysarai"
