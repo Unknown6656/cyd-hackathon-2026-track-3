@@ -11,6 +11,7 @@ An assistant over Ukraine's official air-raid siren record and a private feed of
 3. [Building your Application](track-3/building-your-application.md): the endpoint, the container, what you must protect, and scoring.
 4. [Submitting Application](track-3/submitting-application.md): how to package and hand in your build.
 5. [Extensions](track-3/extensions.md): optional directions once the core works.
+6. [Red Team Brief](track-3/red-team-brief.md): the attacker-side brief from `track3_redteam.zip`.
 
 ## Table of contents
 
