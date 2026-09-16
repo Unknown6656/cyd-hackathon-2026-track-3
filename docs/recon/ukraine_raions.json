@@ -1,0 +1,666 @@
+[
+  {
+    "oblast": "Cherkasy Oblast",
+    "raions": [
+      {
+        "raion": "Cherkasy Raion",
+        "center": "Cherkasy"
+      },
+      {
+        "raion": "Uman Raion",
+        "center": "Uman"
+      },
+      {
+        "raion": "Zolotonosha Raion",
+        "center": "Zolotonosha"
+      },
+      {
+        "raion": "Zvenyhorodka Raion",
+        "center": "Zvenyhorodka"
+      }
+    ]
+  },
+  {
+    "oblast": "Chernihiv Oblast",
+    "raions": [
+      {
+        "raion": "Chernihiv Raion",
+        "center": "Chernihiv"
+      },
+      {
+        "raion": "Nizhyn Raion",
+        "center": "Nizhyn"
+      },
+      {
+        "raion": "Pryluky Raion",
+        "center": "Pryluky"
+      },
+      {
+        "raion": "Novhorod-Siverskyi Raion",
+        "center": "Novhorod-Siverskyi"
+      },
+      {
+        "raion": "Koriukivka Raion",
+        "center": "Koriukivka"
+      }
+    ]
+  },
+  {
+    "oblast": "Chernivtsi Oblast",
+    "raions": [
+      {
+        "raion": "Chernivtsi Raion",
+        "center": "Chernivtsi"
+      },
+      {
+        "raion": "Dnistrovskyi Raion",
+        "center": "Kelmentsi"
+      },
+      {
+        "raion": "Vyzhnytsia Raion",
+        "center": "Vyzhnytsia"
+      }
+    ]
+  },
+  {
+    "oblast": "Dnipropetrovsk Oblast",
+    "raions": [
+      {
+        "raion": "Dnipro Raion",
+        "center": "Dnipro"
+      },
+      {
+        "raion": "Kryvyi Rih Raion",
+        "center": "Kryvyi Rih"
+      },
+      {
+        "raion": "Kamianske Raion",
+        "center": "Kamianske"
+      },
+      {
+        "raion": "Nikopol Raion",
+        "center": "Nikopol"
+      },
+      {
+        "raion": "Pavlohrad Raion",
+        "center": "Pavlohrad"
+      },
+      {
+        "raion": "Samar Raion",
+        "center": "Samar"
+      },
+      {
+        "raion": "Synelnykove Raion",
+        "center": "Synelnykove"
+      }
+    ]
+  },
+  {
+    "oblast": "Donetsk Oblast",
+    "raions": [
+      {
+        "raion": "Donetsk Raion",
+        "center": "Donetsk"
+      },
+      {
+        "raion": "Mariupol Raion",
+        "center": "Mariupol"
+      },
+      {
+        "raion": "Horlivka Raion",
+        "center": "Horlivka"
+      },
+      {
+        "raion": "Kramatorsk Raion",
+        "center": "Kramatorsk"
+      },
+      {
+        "raion": "Bakhmut Raion",
+        "center": "Bakhmut"
+      },
+      {
+        "raion": "Pokrovsk Raion",
+        "center": "Pokrovsk"
+      },
+      {
+        "raion": "Volnovakha Raion",
+        "center": "Volnovakha"
+      },
+      {
+        "raion": "Kalmiuske Raion",
+        "center": "Kalmiuske"
+      }
+    ]
+  },
+  {
+    "oblast": "Ivano-Frankivsk Oblast",
+    "raions": [
+      {
+        "raion": "Ivano-Frankivsk Raion",
+        "center": "Ivano-Frankivsk"
+      },
+      {
+        "raion": "Kalush Raion",
+        "center": "Kalush"
+      },
+      {
+        "raion": "Kolomyia Raion",
+        "center": "Kolomyia"
+      },
+      {
+        "raion": "Nadvirna Raion",
+        "center": "Nadvirna"
+      },
+      {
+        "raion": "Kosiv Raion",
+        "center": "Kosiv"
+      },
+      {
+        "raion": "Verkhovyna Raion",
+        "center": "Verkhovyna"
+      }
+    ]
+  },
+  {
+    "oblast": "Kharkiv Oblast",
+    "raions": [
+      {
+        "raion": "Kharkiv Raion",
+        "center": "Kharkiv"
+      },
+      {
+        "raion": "Lozova Raion",
+        "center": "Lozova"
+      },
+      {
+        "raion": "Izium Raion",
+        "center": "Izium"
+      },
+      {
+        "raion": "Chuhuiv Raion",
+        "center": "Chuhuiv"
+      },
+      {
+        "raion": "Kupiansk Raion",
+        "center": "Kupiansk"
+      },
+      {
+        "raion": "Berestyn Raion",
+        "center": "Berestyn"
+      },
+      {
+        "raion": "Bohodukhiv Raion",
+        "center": "Bohodukhiv"
+      }
+    ]
+  },
+  {
+    "oblast": "Kherson Oblast",
+    "raions": [
+      {
+        "raion": "Kherson Raion",
+        "center": "Kherson"
+      },
+      {
+        "raion": "Kakhovka Raion",
+        "center": "Nova Kakhovka"
+      },
+      {
+        "raion": "Henichesk Raion",
+        "center": "Henichesk"
+      },
+      {
+        "raion": "Skadovsk Raion",
+        "center": "Skadovsk"
+      },
+      {
+        "raion": "Beryslav Raion",
+        "center": "Beryslav"
+      }
+    ]
+  },
+  {
+    "oblast": "Khmelnytskyi Oblast",
+    "raions": [
+      {
+        "raion": "Khmelnytskyi Raion",
+        "center": "Khmelnytskyi"
+      },
+      {
+        "raion": "Kamianets-Podilskyi Raion",
+        "center": "Kamianets-Podilskyi"
+      },
+      {
+        "raion": "Shepetivka Raion",
+        "center": "Shepetivka"
+      }
+    ]
+  },
+  {
+    "oblast": "Kirovohrad Oblast",
+    "raions": [
+      {
+        "raion": "Kropyvnytskyi Raion",
+        "center": "Kropyvnytskyi"
+      },
+      {
+        "raion": "Oleksandriia Raion",
+        "center": "Oleksandriia"
+      },
+      {
+        "raion": "Novoukrainka Raion",
+        "center": "Novoukrainka"
+      },
+      {
+        "raion": "Holovanivsk Raion",
+        "center": "Holovanivsk"
+      }
+    ]
+  },
+  {
+    "oblast": "Kyiv Oblast",
+    "raions": [
+      {
+        "raion": "Bila Tserkva Raion",
+        "center": "Bila Tserkva"
+      },
+      {
+        "raion": "Brovary Raion",
+        "center": "Brovary"
+      },
+      {
+        "raion": "Boryspil Raion",
+        "center": "Boryspil"
+      },
+      {
+        "raion": "Fastiv Raion",
+        "center": "Fastiv"
+      },
+      {
+        "raion": "Bucha Raion",
+        "center": "Bucha"
+      },
+      {
+        "raion": "Obukhiv Raion",
+        "center": "Obukhiv"
+      },
+      {
+        "raion": "Vyshhorod Raion",
+        "center": "Vyshhorod"
+      }
+    ]
+  },
+  {
+    "oblast": "Luhansk Oblast",
+    "raions": [
+      {
+        "raion": "Luhansk Raion",
+        "center": "Luhansk"
+      },
+      {
+        "raion": "Alchevsk Raion",
+        "center": "Alchevsk"
+      },
+      {
+        "raion": "Siverskodonetsk Raion",
+        "center": "Siverskodonetsk"
+      },
+      {
+        "raion": "Dovzhansk Raion",
+        "center": "Dovzhansk"
+      },
+      {
+        "raion": "Rovenky Raion",
+        "center": "Rovenky"
+      },
+      {
+        "raion": "Svatove Raion",
+        "center": "Svatove"
+      },
+      {
+        "raion": "Starobilsk Raion",
+        "center": "Starobilsk"
+      },
+      {
+        "raion": "Shchastia Raion",
+        "center": "Novoaidar"
+      }
+    ]
+  },
+  {
+    "oblast": "Lviv Oblast",
+    "raions": [
+      {
+        "raion": "Lviv Raion",
+        "center": "Lviv"
+      },
+      {
+        "raion": "Drohobych Raion",
+        "center": "Drohobych"
+      },
+      {
+        "raion": "Sheptytskyi Raion",
+        "center": "Sheptytskyi"
+      },
+      {
+        "raion": "Stryi Raion",
+        "center": "Stryi"
+      },
+      {
+        "raion": "Sambir Raion",
+        "center": "Sambir"
+      },
+      {
+        "raion": "Zolochiv Raion",
+        "center": "Zolochiv"
+      },
+      {
+        "raion": "Yavoriv Raion",
+        "center": "Yavoriv"
+      }
+    ]
+  },
+  {
+    "oblast": "Mykolaiv Oblast",
+    "raions": [
+      {
+        "raion": "Mykolaiv Raion",
+        "center": "Mykolaiv"
+      },
+      {
+        "raion": "Pervomaisk Raion",
+        "center": "Pervomaisk"
+      },
+      {
+        "raion": "Voznesensk Raion",
+        "center": "Voznesensk"
+      },
+      {
+        "raion": "Bashtanka Raion",
+        "center": "Bashtanka"
+      }
+    ]
+  },
+  {
+    "oblast": "Odesa Oblast",
+    "raions": [
+      {
+        "raion": "Odesa Raion",
+        "center": "Odesa"
+      },
+      {
+        "raion": "Izmail Raion",
+        "center": "Izmail"
+      },
+      {
+        "raion": "Bilhorod-Dnistrovskyi Raion",
+        "center": "Bilhorod-Dnistrovskyi"
+      },
+      {
+        "raion": "Podilsk Raion",
+        "center": "Podilsk"
+      },
+      {
+        "raion": "Rozdilna Raion",
+        "center": "Rozdilna"
+      },
+      {
+        "raion": "Bolhrad Raion",
+        "center": "Bolhrad"
+      },
+      {
+        "raion": "Berezivka Raion",
+        "center": "Berezivka"
+      }
+    ]
+  },
+  {
+    "oblast": "Poltava Oblast",
+    "raions": [
+      {
+        "raion": "Poltava Raion",
+        "center": "Poltava"
+      },
+      {
+        "raion": "Kremenchuk Raion",
+        "center": "Kremenchuk"
+      },
+      {
+        "raion": "Lubny Raion",
+        "center": "Lubny"
+      },
+      {
+        "raion": "Myrhorod Raion",
+        "center": "Myrhorod"
+      }
+    ]
+  },
+  {
+    "oblast": "Rivne Oblast",
+    "raions": [
+      {
+        "raion": "Rivne Raion",
+        "center": "Rivne"
+      },
+      {
+        "raion": "Varash Raion",
+        "center": "Varash"
+      },
+      {
+        "raion": "Dubno Raion",
+        "center": "Dubno"
+      },
+      {
+        "raion": "Sarny Raion",
+        "center": "Sarny"
+      }
+    ]
+  },
+  {
+    "oblast": "Sumy Oblast",
+    "raions": [
+      {
+        "raion": "Sumy Raion",
+        "center": "Sumy"
+      },
+      {
+        "raion": "Konotop Raion",
+        "center": "Konotop"
+      },
+      {
+        "raion": "Shostka Raion",
+        "center": "Shostka"
+      },
+      {
+        "raion": "Okhtyrka Raion",
+        "center": "Okhtyrka"
+      },
+      {
+        "raion": "Romny Raion",
+        "center": "Romny"
+      }
+    ]
+  },
+  {
+    "oblast": "Ternopil Oblast",
+    "raions": [
+      {
+        "raion": "Ternopil Raion",
+        "center": "Ternopil"
+      },
+      {
+        "raion": "Chortkiv Raion",
+        "center": "Chortkiv"
+      },
+      {
+        "raion": "Kremenets Raion",
+        "center": "Kremenets"
+      }
+    ]
+  },
+  {
+    "oblast": "Vinnytsia Oblast",
+    "raions": [
+      {
+        "raion": "Vinnytsia Raion",
+        "center": "Vinnytsia"
+      },
+      {
+        "raion": "Zhmerynka Raion",
+        "center": "Zhmerynka"
+      },
+      {
+        "raion": "Mohyliv-Podilskyi Raion",
+        "center": "Mohyliv-Podilskyi"
+      },
+      {
+        "raion": "Khmilnyk Raion",
+        "center": "Khmilnyk"
+      },
+      {
+        "raion": "Haisyn Raion",
+        "center": "Haisyn"
+      },
+      {
+        "raion": "Tulchyn Raion",
+        "center": "Tulchyn"
+      }
+    ]
+  },
+  {
+    "oblast": "Volyn Oblast",
+    "raions": [
+      {
+        "raion": "Lutsk Raion",
+        "center": "Lutsk"
+      },
+      {
+        "raion": "Kovel Raion",
+        "center": "Kovel"
+      },
+      {
+        "raion": "Volodymyr Raion",
+        "center": "Volodymyr"
+      },
+      {
+        "raion": "Kamin-Kashyrskyi Raion",
+        "center": "Kamin-Kashyrskyi"
+      }
+    ]
+  },
+  {
+    "oblast": "Zakarpattia Oblast",
+    "raions": [
+      {
+        "raion": "Uzhhorod Raion",
+        "center": "Uzhhorod"
+      },
+      {
+        "raion": "Mukachevo Raion",
+        "center": "Mukachevo"
+      },
+      {
+        "raion": "Khust Raion",
+        "center": "Khust"
+      },
+      {
+        "raion": "Berehove Raion",
+        "center": "Berehove"
+      },
+      {
+        "raion": "Rakhiv Raion",
+        "center": "Rakhiv"
+      },
+      {
+        "raion": "Tiachiv Raion",
+        "center": "Tiachiv"
+      }
+    ]
+  },
+  {
+    "oblast": "Zaporizhzhia Oblast",
+    "raions": [
+      {
+        "raion": "Zaporizhzhia Raion",
+        "center": "Zaporizhzhia"
+      },
+      {
+        "raion": "Melitopol Raion",
+        "center": "Melitopol"
+      },
+      {
+        "raion": "Berdiansk Raion",
+        "center": "Berdiansk"
+      },
+      {
+        "raion": "Polohy Raion",
+        "center": "Polohy"
+      },
+      {
+        "raion": "Vasylivka Raion",
+        "center": "Vasylivka"
+      }
+    ]
+  },
+  {
+    "oblast": "Zhytomyr Oblast",
+    "raions": [
+      {
+        "raion": "Zhytomyr Raion",
+        "center": "Zhytomyr"
+      },
+      {
+        "raion": "Berdychiv Raion",
+        "center": "Berdychiv"
+      },
+      {
+        "raion": "Korosten Raion",
+        "center": "Korosten"
+      },
+      {
+        "raion": "Zviahel Raion",
+        "center": "Zviahel"
+      },
+      {
+        "raion": "Bakhchysarai Raion",
+        "center": "Bakhchysarai"
+      },
+      {
+        "raion": "Bilohirsk Raion",
+        "center": "Bilohirsk"
+      },
+      {
+        "raion": "Dzhankoi Raion",
+        "center": "Dzhankoi"
+      },
+      {
+        "raion": "Feodosia Raion",
+        "center": "Feodosia"
+      },
+      {
+        "raion": "Kerch Raion",
+        "center": "Kerch"
+      },
+      {
+        "raion": "Perekop Raion",
+        "center": "Yany Kapu"
+      },
+      {
+        "raion": "Kurman Raion",
+        "center": "Kurman"
+      },
+      {
+        "raion": "Simferopol Raion",
+        "center": "Simferopol"
+      },
+      {
+        "raion": "Yalta Raion",
+        "center": "Yalta"
+      },
+      {
+        "raion": "Yevpatoria Raion",
+        "center": "Yevpatoria"
+      }
+    ]
+  }
+]
